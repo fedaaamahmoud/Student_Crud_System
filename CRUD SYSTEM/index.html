@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>CRUD SYSTEM|Fedaa Mahmoud</title>
+</head>
+
+<body style="color:white ; background-color: #1d2630;">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5 mt-4 fw-bold ">STUDENT CRUD SYSTEM</h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-8 mb-3 my-2">
+                    <label for="id">ID</label>
+                    <input type="number" class="form-control" id="id" placeholder="Enter your ID">
+                </div>
+                <div class="col-10 col-8 mb-3 my-2">
+                    <label for="firstName">FirstName</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your FirstName">
+                </div>
+                <div class="col-10 col-8 mb-3 my-2">
+                    <label for="lastName">lastName</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your lastName">
+                </div>
+               
+                <div class="col-10 col-8 mb-3 my-2">
+                    <label for="Section">Section</label>
+                    <input type="number" class="form-control" id="Section" placeholder="Enter your Section">
+                </div>
+                <div class="col-10 col-8 mb-3">
+                    <input class="btn btn-outline-success mt-4" type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="col-12 col-10 mt-5">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>FirstName</th>
+                            <th>lastName</th>
+                            <th>Section</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-content">
+                        <tr>
+                            <td>1</td>
+                            <td>Fedaa</td>
+                            <td>Mahmoud</td>
+                            <td>7</td>
+                            <td>
+                                <a href="#" class="btn btn-outline-light btn-sm edit">Update</a>
+                                <a href="#" class="btn btn-outline-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
